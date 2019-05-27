@@ -36,6 +36,13 @@ html, body {
   -webkit-text-size-adjust: none; /* Never autoresize text */
 }
 
+.header {
+  margin-top: 60px;
+  nav {
+    background-color: white;
+  }
+}
+
 ////////////////////////////////////////////////////////////////////////////////
 // TABLE OF CONTENTS
 ////////////////////////////////////////////////////////////////////////////////
@@ -50,6 +57,7 @@ html, body {
 .toc-wrapper {
   transition: left 0.3s ease-in-out;
 
+  margin-top: 60px;
   overflow-y: auto;
   overflow-x: hidden;
   position: fixed;
@@ -92,6 +100,10 @@ html, body {
       outline: none;
       color: $nav-text;
       border-radius: 0; /* ios has a default border radius */
+    }
+
+    ::placeholder {
+      color: $nav-text;
     }
 
     &:before {
