@@ -208,6 +208,12 @@ html, body {
   }
 }
 
+.divider {
+  border-left: 1px solid grey;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
 .toc-link, .toc-footer li {
   padding: 0 $nav-padding 0 $nav-padding;
   display: block;
